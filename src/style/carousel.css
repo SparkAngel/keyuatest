@@ -1,0 +1,34 @@
+/* eslint-disable */
+
+.carousel-first {
+  display: flex !important ;
+}
+.carousel-second {
+  display: flex !important ;
+}
+.carousel-first_logo {
+  content: url("../image/woman.png");
+  width: 80px;
+height: 80px;
+}
+.carousel-second_logo {
+  content: url("../image/man.png");
+  width: 80px;
+height: 80px;
+}
+.carousel-first_about {
+width: 450px;
+}
+.carousel-first_about-name {
+  font-family: " Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #333333;
+}
+
+.carousel-first_about-text {
+  font-family: " Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  color:#646464;
+}

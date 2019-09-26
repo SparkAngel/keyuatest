@@ -1,0 +1,196 @@
+/* eslint-disable */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #1F1F1F;
+  font-size: 13px;
+  line-height: 21px;
+}
+
+.main {
+  max-width: 1280px;
+  margin: 40px auto 50px;
+}
+
+.main-wrapper-h1 {
+width: 920px;
+height: 72px;
+text-align: center;
+margin: auto;
+}
+
+.main-wrapper_plan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.wrapper_plan-trial {
+  width: 350px;
+  height: 475px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 2px solid #3D8F85;
+  border-radius: 7px;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+.wrapper_plan-annual{
+  width: 350px;
+  height: 475px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #D4D9E6;
+  border-radius: 7px;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.plan-trial_header {
+  height: 87px;
+  background: #3D8F85;
+  opacity: 1;
+}
+
+.plan-trial_text {
+  text-align: center;
+  font: Bold 24px/41px Open Sans;
+  letter-spacing: 0.72px;
+  color: #FFFFFF;
+
+}
+.plan-trial_text2 {
+  text-align: center;
+  font: Bold 21px/29px Open Sans;
+  letter-spacing: 0.42px;
+  color: #FFFFFF;
+  opacity: 0.69;
+}
+
+.plan-trial_logo {
+  content: url("../image/logoTrial.svg");
+
+}
+.plan-annual_logo {
+  content: url("../image/logoAnnual.svg");
+  margin-top: 90px;
+}
+
+.plan-trial_text-trial,
+.plan-annual_text-annual {
+  text-align: center;
+  font: Bold 18px/28px Open Sans;
+  letter-spacing: 0;
+  color: #646464;
+  opacity: 1;
+  margin-top: 20px;
+}
+
+.plan-trial_text-4 {
+  text-align: center;
+  font: Regular 11px/17px Open Sans;
+  letter-spacing: 0;
+  color: #646464;
+  opacity: 1;
+  margin-top: 10px;
+}
+.plan-trial_text-price,
+.plan-annual_text-price {
+  margin-top: 5px;
+  text-align: center;
+  color: #3D8F85;
+  opacity: 1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+.plan-trial_price1,
+.plan-annual_price1 {
+  margin: 13px auto;
+  text-align: center;
+  color: #585858;
+  opacity: 1;
+  width: 266px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+}
+
+.plan-trial_button,
+.plan-annual_button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  height: 60px;
+  width: 260px;
+  background: #E24C2C;
+  box-shadow: 0px 0px 20px #E24C2C87;
+  border-radius: 7px;
+  text-align: center;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.plan-trial_link,
+.plan-annual_link {
+  margin: auto;
+}
+
+.plan-annual_text-price {
+  margin-top: 38px;
+}
+
+.wrapper_plan-about {
+  width: 407px;
+  height: 475px;
+  margin-left: 20px;
+}
+
+.plan-about_logo {
+  content: url("../image/aboutprice.png");
+}
+
+.plan-about_texth1 {
+  color: #585858;
+  font-family: " Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-left: 100px;
+}
+
+.plan-about_textp {
+  color: #333333;
+  font-family: " Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  list-style-type: none;
+  margin-bottom: 20px;
+  margin-top: 12px;
+}
+
+.plan-about_logo-v {
+  content: url("../image/logoYes.svg");
+  margin-right: 17px;
+}
+
+.main-wrapper_carousel{
+  margin-top: 50px;
+  margin-left: 45px;
+}
+
