@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/keyuatest/static/css/main.9b433a36.chunk.css",
+    "main.js": "/keyuatest/static/js/main.5f96f07e.chunk.js",
+    "main.js.map": "/keyuatest/static/js/main.5f96f07e.chunk.js.map",
+    "runtime~main.js": "/keyuatest/static/js/runtime~main.d21fd8da.js",
+    "runtime~main.js.map": "/keyuatest/static/js/runtime~main.d21fd8da.js.map",
+    "static/css/2.bf6ebad0.chunk.css": "/keyuatest/static/css/2.bf6ebad0.chunk.css",
+    "static/js/2.ab879ae4.chunk.js": "/keyuatest/static/js/2.ab879ae4.chunk.js",
+    "static/js/2.ab879ae4.chunk.js.map": "/keyuatest/static/js/2.ab879ae4.chunk.js.map",
+    "index.html": "/keyuatest/index.html",
+    "precache-manifest.c05320cffe03c616632524c392817330.js": "/keyuatest/precache-manifest.c05320cffe03c616632524c392817330.js",
+    "service-worker.js": "/keyuatest/service-worker.js",
+    "static/css/2.bf6ebad0.chunk.css.map": "/keyuatest/static/css/2.bf6ebad0.chunk.css.map",
+    "static/css/main.9b433a36.chunk.css.map": "/keyuatest/static/css/main.9b433a36.chunk.css.map",
+    "static/media/annualplan.css": "/keyuatest/static/media/logoAnnual.b066d79b.svg",
+    "static/media/trialplan.css": "/keyuatest/static/media/logopayments.5d4361b9.svg",
+    "static/media/header.css": "/keyuatest/static/media/logocompany.baa3aa3d.svg",
+    "static/media/carousel.css": "/keyuatest/static/media/woman.73da265f.png",
+    "static/media/slick-theme.css": "/keyuatest/static/media/slick.f97e3bbf.svg"
+  }
+}
