@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "aef06f340f2ae68eb6b4a5d1072f63f3",
+    "revision": "a9d17f59dad181f826004bead9f60338",
     "url": "/keyuatest/index.html"
   },
   {
-    "revision": "c770ca99063e10faf3c7",
+    "revision": "2829272a8bc3d966558c",
     "url": "/keyuatest/static/css/2.bf6ebad0.chunk.css"
   },
   {
-    "revision": "639f50a4fb488930ced7",
-    "url": "/keyuatest/static/css/main.9b433a36.chunk.css"
+    "revision": "40adf8df9eddf68a296d",
+    "url": "/keyuatest/static/css/main.1d7d0ffb.chunk.css"
   },
   {
-    "revision": "c770ca99063e10faf3c7",
-    "url": "/keyuatest/static/js/2.ab879ae4.chunk.js"
+    "revision": "2829272a8bc3d966558c",
+    "url": "/keyuatest/static/js/2.d9c74ccb.chunk.js"
   },
   {
-    "revision": "639f50a4fb488930ced7",
-    "url": "/keyuatest/static/js/main.5f96f07e.chunk.js"
+    "revision": "40adf8df9eddf68a296d",
+    "url": "/keyuatest/static/js/main.d5274030.chunk.js"
   },
   {
     "revision": "a2b913d57aeb631d97a6",
