@@ -122,6 +122,7 @@ display: flex;
   font-size: 13px;
   color: #3D8F85;
   margin-left: 30px;
+  outline: none;
 }
 
 .main-wrapper-logo-pay {

@@ -1,4 +1,4 @@
-/* eslint-disable */
+
 import React, { useState } from 'react';
 import NumberFormat from 'react-number-format';
 import '../style/payments.css';
@@ -11,6 +11,12 @@ const Payments = () => {
   const [changemonth, setchangemonth] = useState(false);
   const [changeYear, setchangeYear] = useState(false);
   const [changeCardNumber, setChangeCardNumber] = useState(false);
+  const [errorInput, setErrorInput] = useState(false);
+  const [errorInput2, setErrorInput2] = useState(false);
+  const [inputName, setInputName] = useState('');
+  const [errorInputName, setErrorInputName] = useState(false);
+  const [inputLastName, setInputLastName] = useState('');
+  const [errorInputLastName, setErrorLastInputName] = useState(false);
 
   const getDropList = () => {
     let years = inputvalue - 1;
@@ -40,7 +46,52 @@ const Payments = () => {
     setYear(event.target.value);
   };
 
+  const errorInputLength = () => {
+    if (changeCardNumber === true && filterValue.length < 15) {
+      return true;
+    }
+
+    return false;
+  };
+
+  const onErrorSelect = () => {
+    if (
+      (changemonth === true && month === 'Month')
+
+      || (changeYear === true && year === 'Year')
+
+    ) {
+      return true;
+    }
+
+    return false;
+  };
+
+  const onChangeInputName = (event) => {
+    setInputName(event.target.value.trim());
+  };
+
+  const onChangeInputLastName = (event) => {
+    setInputLastName(event.target.value.trim());
+  };
+
+  const disabledButton = () => {
+    if (errorInputLastName === true
+      || inputLastName === true
+      || errorInput2 === true
+      || errorInput === true
+      || year === 'Year'
+      || month === 'Month') {
+      return true;
+    }
+
+    return false;
+  };
+
   const DropList = getDropList();
+  const errorInputLengths = errorInputLength();
+  const onErrorSelects = onErrorSelect();
+  const disabledButtons = disabledButton();
 
   return (
     <section className="main-secction">
@@ -54,20 +105,24 @@ const Payments = () => {
 
         <NumberFormat
           id="inputcard"
-          className="form-card-input"
           onValueChange={(values) => {
             setFilterValue(values.value);
             setChangeCardNumber(true);
+            errorInputLengths ? setErrorInput(true) : setErrorInput(false);
+            values.value.indexOf(4)
+              ? setErrorInput2(true)
+              : setErrorInput2(false);
           }}
           placeholder="Enter card number"
           format="#### #### #### ####"
+          className={errorInput
+            || errorInput2 ? 'form-card-input-error'
+            : 'form-card-input'}
         />
 
-        {changeCardNumber === true
-          && filterValue.length < 16
+        {errorInput
           ? (<p className="form-input-error">Minimum length 16</p>) : '' }
-        {changeCardNumber === true
-          && filterValue.indexOf(4)
+        {errorInput2
           ? (
             <p
               className="form-input-error"
@@ -84,11 +139,16 @@ const Payments = () => {
           id="selectMonth"
           name="Month"
           aria-label="select Month"
-          className="form-select_month"
-          onChange={onChange}
+          value={month}
+          onChange={(event) => {
+            onChange(event);
+          }}
           onClick={onClick}
+          className={onErrorSelects
+            ? 'form-select_month-error'
+            : 'form-select_month'}
         >
-          <option value="Month">Month</option>
+          <option disabled value="Month">Month</option>
           <option value="January">January</option>
           <option value="February">February</option>
           <option value="March">March</option>
@@ -102,10 +162,8 @@ const Payments = () => {
           <option value="November">November</option>
           <option value="December">December</option>
         </select>
-        {changemonth === true
-          && month === 'Month'
-          || changeYear === true
-          && year === 'Year'
+
+        { onErrorSelects
           ? (<p className="form-input-error">You entered incorrect data</p>)
           : ''}
       </form>
@@ -117,11 +175,14 @@ const Payments = () => {
         <select
           name="years"
           aria-label="select years"
-          className="form-select_years"
+          value={year}
           onClick={onClickYears}
           onChange={onChangeYears}
+          className={onErrorSelects
+            ? 'form-select_years-error'
+            : 'form-select_years'}
         >
-          <option value="Year">Year</option>
+          <option disabled value="Year">Year</option>
           {DropList}
         </select>
       </form>
@@ -134,9 +195,21 @@ const Payments = () => {
           name="input First Name"
           autoComplete="off"
           aria-label="input First Name"
-          className="secction-form_input-name"
           placeholder="Enter First Name"
+          value={inputName}
+          onChange={(event) => {
+            onChangeInputName(event);
+            event.target.value.charAt(0).match(/[A-Z]/g)
+              ? setErrorInputName(false)
+              : setErrorInputName(true);
+          }}
+          className={errorInputName
+            ? 'secction-form_input-name-error'
+            : 'secction-form_input-name'}
         />
+        {errorInputName
+          ? (<p className="form-input-error">First letter must be uppercase</p>)
+          : ''}
       </form>
 
       <form className="secction-form">
@@ -147,13 +220,34 @@ const Payments = () => {
           name="input Last Name"
           autoComplete="off"
           aria-label="input Last Name"
-          className="secction-form_input-name"
           placeholder="Enter Last Name"
+          value={inputLastName}
+          onChange={(event) => {
+            onChangeInputLastName(event);
+            event.target.value.charAt(0).match(/[A-Z]/g)
+              ? setErrorLastInputName(false)
+              : setErrorLastInputName(true);
+          }}
+          className={errorInputLastName
+            ? 'secction-form_input-lastnameEr'
+            : 'secction-form_input-lastname'}
         />
+        {errorInputLastName
+          ? (<p className="form-input-error">First letter must be uppercase</p>)
+          : ''}
       </form>
 
       <div className="section-confirm">
-        <button type="button" className="secction-button">Confirm</button>
+        <button
+          type="button"
+          disabled={disabledButtons}
+          className={disabledButtons
+            ? 'secction-button-error'
+            : 'secction-button'
+          }
+        >
+            Confirm
+        </button>
         <img alt="logo" className="confirm-logo" />
         <p className="confirm-text">Secure credit card payment</p>
       </div>
@@ -167,3 +261,5 @@ const Payments = () => {
 };
 
 export default Payments;
+/* eslint-disable */
+
