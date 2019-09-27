@@ -1,0 +1,103 @@
+/* eslint-disable */
+
+.annual-plan {
+  width: 532px;
+  height: 116px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #D4D9E6;
+  border-radius: 7px;
+}
+
+.annual-plan_text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: #FFFFFF;
+
+}
+
+.annual-plan_text2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: #FFFFFF;
+  opacity: 0.69;
+}
+
+.annual-plan_body {
+  display: flex;
+  align-items: center;
+  height: 116px;
+}
+
+.annual-plan_logo {
+  width: 83px;
+  height: 94px;
+  content: url("../image/logoAnnual.svg");
+  margin-left: 28px;
+}
+
+.annual-plan_main {
+  margin-left: 30px;
+}
+
+.plan_main-annual {
+  color: #585858;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.plan_main-text {
+  color: #333333;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 9px;
+}
+
+.plan_main-text-wrapper {
+display: flex;
+}
+
+.plan_main-price-annual {
+  color: #3D8F85;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 6px;
+}
+
+.plan_main-text-annual {
+  width: 189px;
+  height: 32px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  color: #3D8F85;
+}
+
+.plan_main-price-text {
+color: #585858;
+opacity: 0.8;
+font-family: "Open Sans", sans-serif;
+font-weight: normal;
+font-size: 10px;
+line-height: 12px;
+margin-top: 5px;
+}
+
+.annual-plan_button {
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  width: 118px;
+  height: 37px;
+  border: 2px solid #3D8F85;
+  border-radius: 7px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  color: #3D8F85;
+}

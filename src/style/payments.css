@@ -1,0 +1,132 @@
+/* eslint-disable */
+
+.main-secction{
+  width: 530px;
+  display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.secction-form_card{
+margin-right: 40px;
+}
+
+.form-card-text {
+  color: #333333;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 10px;
+}
+
+.form-card-input {
+  width: 219px;
+  height: 39px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #D4D9E6;
+  border-radius: 7px;
+  padding-left: 10px;
+  outline: none;
+}
+
+.form-input-error {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 10px;
+  color: #E24C2C;
+}
+
+.form-select_month {
+  width: 120px;
+  height: 39px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #D4D9E6;
+  border-radius: 7px;
+  padding-left: 10px;
+  outline: none;
+}
+
+.secction-form-space {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 81px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+
+.form-select_years {
+  width: 80px;
+  height: 39px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #D4D9E6;
+  border-radius: 7px;
+  padding-left: 10px;
+  outline: none;
+}
+
+.secction-form {
+  margin-top: 15px;
+}
+
+.secction-form_name{
+  margin-right: 40px;
+  margin-top: 15px;
+}
+
+.secction-form_input-name{
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #D4D9E6;
+  border-radius: 7px;
+  padding-left: 10px;
+  width: 219px;
+  height: 39px;
+  outline: none;
+}
+
+.section-confirm {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.confirm-logo {
+  content: url("../image/close.png");
+}
+
+.secction-button {
+  background: #E24C2C 0% 0% no-repeat padding-box;
+box-shadow: 0px 0px 10px #E24C2C;
+border-radius: 7px;
+width: 127px;
+height: 40px;
+border: none;
+font: inherit;
+color: inherit;
+cursor: pointer;
+text-align: center;
+color: #FFFFFF;
+font-family: "Montserrat", sans-serif;
+font-weight: bold;
+font-size: 15px;
+margin-right: 10px;
+}
+
+.confirm-text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 10px;
+  opacity: 0.5;
+}
+
+.section-terms {
+  width: 399px;
+  height: 29px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 10px;
+  opacity: 0.8;
+  margin-left: 20px;
+  margin-top: 15px;
+}

@@ -1,0 +1,48 @@
+/* eslint-disable */
+
+.footer-wrapper{
+  max-width: 1920px;
+  height: 156px;
+  background: #2A1818 0% 0% no-repeat padding-box;
+}
+
+.footer-wrapper-about {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 1170px;
+  margin: auto;
+}
+
+.wrapper-about_logo-footer {
+  content: url("../image/Logocompany2.png");
+  margin-right: 300px;
+}
+
+.footer-wrapper-specification {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 300px;
+
+}
+
+.wrapper-specification-text {
+  color: #FFFFFF;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  opacity: 0.8;
+}
+
+.footer-wrapper-text {
+  color: #FFFFFF;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  opacity: 0.4;
+  border-top: 1px solid #3D8F85;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+}

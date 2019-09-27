@@ -1,0 +1,158 @@
+/* eslint-disable */
+
+.main {
+  max-width: 1280px;
+  margin: 40px auto 50px;
+}
+
+.main-wrapper-h1 {
+width: 920px;
+height: 72px;
+text-align: center;
+margin: auto;
+line-height: 30px;
+margin-bottom: 20px;
+}
+
+.main-wrapper_cards {
+  display: flex;
+  margin-bottom: 60px;
+}
+.main-wrapper_trial {
+  margin: 0px 74px 0 20px;
+}
+
+.trial-plan {
+  width: 532px;
+  height: 150px;
+
+}
+.trial-plan_header {
+  border: 2px solid #3D8F85;
+  border-radius: 7px 7px 0px 0px;
+  background: #3D8F85;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 42px;
+}
+
+.trial-plan_text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: #FFFFFF;
+
+}
+
+.trial-plan_text2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: #FFFFFF;
+  opacity: 0.69;
+}
+
+.trial-plan_body {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #D4D9E6;
+  height: 110px;
+  display: flex;
+  align-items: center;
+}
+.trial-plan_logo {
+  width: 83px;
+  height: 94px;
+  content: url("../image/logoTrial.svg");
+  margin-left: 28px;
+}
+
+.trial-plan_main {
+  margin-left: 30px;
+}
+
+.plan_main-trial {
+  color: #585858;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.plan_main-text {
+  color: #333333;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 9px;
+}
+
+.plan_main-text-wrapper {
+display: flex;
+}
+
+.plan_main-price {
+  color: #3D8F85;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 15px;
+}
+
+.plan_main-price-text {
+  width: 189px;
+  height: 32px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+  color: #585858;
+  opacity: 0.8;
+}
+
+.trial-plan_button {
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  width: 118px;
+  height: 37px;
+  border: 2px solid #3D8F85;
+  border-radius: 7px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  color: #3D8F85;
+  margin-left: 30px;
+}
+
+.main-wrapper-logo-pay {
+  content: url("../image/logopayments.svg");
+  margin-top: 30px;
+  margin-left: 25px;
+}
+
+.plan-about_logo {
+  content: url("../image/aboutprice.png");
+}
+
+.plan-about_texth1 {
+  color: #585858;
+  font-family: " Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-left: 100px;
+}
+
+.plan-about_textp {
+  color: #333333;
+  font-family: " Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  list-style-type: none;
+  margin-bottom: 20px;
+  margin-top: 12px;
+}
+
+.plan-about_logo-v {
+  content: url("../image/logoYes.svg");
+  margin-right: 17px;
+}
